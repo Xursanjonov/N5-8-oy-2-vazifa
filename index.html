@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Fronted</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__logo" href="/index.html">
+                <h3>Header</h3>
+            </a>
+            <ul class="header__ul">
+                <a href="/index.html">Home</a>
+                <li class="add__user">Create User</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="overlay"></div>
+    <div class="modal">
+        <h2 class="modal__title">Create User</h2>
+        <form class="user__form">
+            <input required type="text" placeholder="Full Name">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <input type="text" placeholder="Address">
+            <input type="number" placeholder="Phone number">
+            <input type="email" placeholder="Email">
+            <input type="number" placeholder="Age">
+            <input type="text" placeholder="Image url">
+            <select id="category">
+                <option value="" disabled >Category</option>
+                <option value="phones">Phones</option>
+                <option value="apple">Apple</option>
+                <option value="samsung">Samsung</option>
+                <option value="gaming">Gaming</option>
+                <option value="computers">Computers</option>
+            </select>
+            <button type="submit" class="form__btn">Create</button>
+        </form>
+    </div>
+    <div class="wrapper">
+    </div>
+
+    <script src="./js/users.js"></script>
+</body>
+
+</html>
